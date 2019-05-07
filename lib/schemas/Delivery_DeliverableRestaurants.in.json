@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "toLat": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "toLon": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "toPostcode": {
+            "required": false,
+            "type": "string"
+        },
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

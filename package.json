@@ -1,0 +1,15 @@
+{
+    "name": "just-eat-co-uk-connector",
+    "version": "1.0.0",
+    "description": "<h2>Delivery Service API</h2><p>Some calls require HTTPS and an Authorization Key which will be provided by Just Eat.<p><p>The key needs to be provided in the header as follows: <b>Authorization: JE-API-KEY {Your-Key-Here}</b></p>",
+    "main": "component.json",
+    "dependencies": {
+        "elasticio-node": "0.0.9",
+        "elasticio-sailor-nodejs": "^2.2.1",
+        "swagger-client": "^3.8.22"
+    },
+    "author": {
+        "name": "Deutsche Telekom AG"
+    },
+    "license": "Apache-2.0"
+}

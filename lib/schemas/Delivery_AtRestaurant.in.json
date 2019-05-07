@@ -1,0 +1,57 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "example": {
+                "Location": {
+                    "Accuracy": 12.923,
+                    "Heading": 312.29,
+                    "Latitude": 51.51641,
+                    "Longitude": -0.103198,
+                    "Speed": 4.12
+                },
+                "TimeStampWithUtcOffset": "2018-08-24T13:24:04.6852444+00:00"
+            },
+            "properties": {
+                "Location": {
+                    "properties": {
+                        "Accuracy": {
+                            "format": "double",
+                            "type": "number"
+                        },
+                        "Heading": {
+                            "format": "double",
+                            "type": "number"
+                        },
+                        "Latitude": {
+                            "format": "double",
+                            "type": "number"
+                        },
+                        "Longitude": {
+                            "format": "double",
+                            "type": "number"
+                        },
+                        "Speed": {
+                            "format": "double",
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                "TimeStampWithUtcOffset": {
+                    "format": "date-time",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

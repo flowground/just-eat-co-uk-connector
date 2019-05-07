@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "EstimatedArrivalTime": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "Location": {
+                    "properties": {
+                        "Accuracy": {
+                            "format": "double",
+                            "type": "number"
+                        },
+                        "Heading": {
+                            "format": "double",
+                            "type": "number"
+                        },
+                        "Latitude": {
+                            "format": "double",
+                            "type": "number"
+                        },
+                        "Longitude": {
+                            "format": "double",
+                            "type": "number"
+                        },
+                        "Speed": {
+                            "format": "double",
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                "TimeStampWithUtcOffset": {
+                    "format": "date-time",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

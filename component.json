@@ -1,0 +1,326 @@
+{
+    "title": "Just Eat UK",
+    "description": "<h2>Delivery Service API</h2><p>Some calls require HTTPS and an Authorization Key which will be provided by Just Eat.<p><p>The key needs to be provided in the header as follows: <b>Authorization: JE-API-KEY {Your-Key-Here}</b></p>",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/just-eat.co.uk/v1/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://uk-deliveryserviceexternalapi.just-eat.co.uk:443/",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "Delivery_DeliverableRestaurants": {
+            "main": "./lib/actions/Delivery_DeliverableRestaurants.js",
+            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "description": "- This method requires the use of an Authorization Key.\r\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Delivery_DeliverableRestaurants.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Delivery_Estimate": {
+            "main": "./lib/actions/Delivery_Estimate.js",
+            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "description": "- This method requires the use of an Authorization Key.\r\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Delivery_Estimate.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_health_check": {
+            "main": "./lib/actions/get_health_check.js",
+            "title": "get_health_check",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_health_check.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_health_validate": {
+            "main": "./lib/actions/get_health_validate.js",
+            "title": "get_health_validate",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_health_validate.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_healthcheck": {
+            "main": "./lib/actions/get_healthcheck.js",
+            "title": "get_healthcheck",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_healthcheck.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Delivery_BulkDriverLocations": {
+            "main": "./lib/actions/Delivery_BulkDriverLocations.js",
+            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "description": "- This method requires the use of an Authorization Key.\r\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "text/json": "text/json",
+                        "application/xml": "application/xml",
+                        "text/xml": "text/xml",
+                        "application/x-www-form-urlencoded": "application/x-www-form-urlencoded"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Delivery_BulkDriverLocations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Delivery_AtDeliveryAddress": {
+            "main": "./lib/actions/Delivery_AtDeliveryAddress.js",
+            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "description": "- This method requires the use of an Authorization Key.\r\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "text/json": "text/json",
+                        "application/xml": "application/xml",
+                        "text/xml": "text/xml",
+                        "application/x-www-form-urlencoded": "application/x-www-form-urlencoded"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Delivery_AtDeliveryAddress.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Delivery_AtRestaurant": {
+            "main": "./lib/actions/Delivery_AtRestaurant.js",
+            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "description": "- This method requires the use of an Authorization Key.\r\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "text/json": "text/json",
+                        "application/xml": "application/xml",
+                        "text/xml": "text/xml",
+                        "application/x-www-form-urlencoded": "application/x-www-form-urlencoded"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Delivery_AtRestaurant.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Delivery_Delivered": {
+            "main": "./lib/actions/Delivery_Delivered.js",
+            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "description": "- This method requires the use of an Authorization Key.\r\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "text/json": "text/json",
+                        "application/xml": "application/xml",
+                        "text/xml": "text/xml",
+                        "application/x-www-form-urlencoded": "application/x-www-form-urlencoded"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Delivery_Delivered.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Delivery_DriverAssigned": {
+            "main": "./lib/actions/Delivery_DriverAssigned.js",
+            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "description": "- This method requires the use of an Authorization Key.\r\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "text/json": "text/json",
+                        "application/xml": "application/xml",
+                        "text/xml": "text/xml",
+                        "application/x-www-form-urlencoded": "application/x-www-form-urlencoded"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Delivery_DriverAssigned.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Delivery_DriverLocation": {
+            "main": "./lib/actions/Delivery_DriverLocation.js",
+            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "description": "- This method requires the use of an Authorization Key.\r\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "text/json": "text/json",
+                        "application/xml": "application/xml",
+                        "text/xml": "text/xml",
+                        "application/x-www-form-urlencoded": "application/x-www-form-urlencoded"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Delivery_DriverLocation.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Delivery_OnItsWay": {
+            "main": "./lib/actions/Delivery_OnItsWay.js",
+            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "description": "- This method requires the use of an Authorization Key.\r\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "text/json": "text/json",
+                        "application/xml": "application/xml",
+                        "text/xml": "text/xml",
+                        "application/x-www-form-urlencoded": "application/x-www-form-urlencoded"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Delivery_OnItsWay.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

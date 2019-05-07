@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "restaurantReference": {
+            "required": true,
+            "type": "string"
+        },
+        "toLat": {
+            "required": false,
+            "type": "string"
+        },
+        "toLon": {
+            "required": false,
+            "type": "string"
+        },
+        "toPostcode": {
+            "required": false,
+            "type": "string"
+        },
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
