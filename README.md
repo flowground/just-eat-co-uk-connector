@@ -5,11 +5,11 @@
 A generated **flow**ground connector for the Just Eat UK API (version v1).
 
 Generated from: https://api.apis.guru/v2/specs/just-eat.co.uk/v1/swagger.json<br/>
-Generated at: 2019-05-07T17:42:37+03:00
+Generated at: 2019-07-08T14:13:34+03:00
 
 ## API Description
 
-<h2>Delivery Service API</h2><p>Some calls require HTTPS and an Authorization Key which will be provided by Just Eat.<p><p>The key needs to be provided in the header as follows: <b>Authorization: JE-API-KEY {Your-Key-Here}</b></p>
+<h3>Delivery Service API</h3><p>Some calls require HTTPS and an Authorization Key which will be provided by Just Eat.<p><p>The key needs to be provided in the header as follows: <b>Authorization: JE-API-KEY {Your-Key-Here}</b></p>
 
 ## Authorization
 
@@ -17,7 +17,8 @@ This API does not require authorization.
 
 ## Actions
 
-### - This method requires the use of an Authorization Key.
+### Delivery_DeliverableRestaurants
+> - This method requires the use of an Authorization Key.<br/>
 
 *Tags:* `Delivery`
 
@@ -25,9 +26,10 @@ This API does not require authorization.
 * `toLat` - _optional_
 * `toLon` - _optional_
 * `toPostcode` - _optional_
-* `Authorization` - _required_ - access token
+* `Authorization` - _required_ - access token<br/>
 
-### - This method requires the use of an Authorization Key.
+### Delivery_Estimate
+> - This method requires the use of an Authorization Key.<br/>
 
 *Tags:* `Delivery`
 
@@ -36,7 +38,7 @@ This API does not require authorization.
 * `toLat` - _optional_
 * `toLon` - _optional_
 * `toPostcode` - _optional_
-* `Authorization` - _required_ - access token
+* `Authorization` - _required_ - access token<br/>
 
 ### get_health_check
 
@@ -50,60 +52,67 @@ This API does not require authorization.
 
 *Tags:* `Health`
 
-### - This method requires the use of an Authorization Key.
+### Delivery_BulkDriverLocations
+> - This method requires the use of an Authorization Key.<br/>
 
 *Tags:* `Delivery`
 
 #### Input Parameters
-* `Authorization` - _required_ - access token
+* `Authorization` - _required_ - access token<br/>
 
-### - This method requires the use of an Authorization Key.
-
-*Tags:* `Delivery`
-
-#### Input Parameters
-* `id` - _required_
-* `Authorization` - _required_ - access token
-
-### - This method requires the use of an Authorization Key.
+### Delivery_AtDeliveryAddress
+> - This method requires the use of an Authorization Key.<br/>
 
 *Tags:* `Delivery`
 
 #### Input Parameters
 * `id` - _required_
-* `Authorization` - _required_ - access token
+* `Authorization` - _required_ - access token<br/>
 
-### - This method requires the use of an Authorization Key.
-
-*Tags:* `Delivery`
-
-#### Input Parameters
-* `id` - _required_
-* `Authorization` - _required_ - access token
-
-### - This method requires the use of an Authorization Key.
+### Delivery_AtRestaurant
+> - This method requires the use of an Authorization Key.<br/>
 
 *Tags:* `Delivery`
 
 #### Input Parameters
 * `id` - _required_
-* `Authorization` - _required_ - access token
+* `Authorization` - _required_ - access token<br/>
 
-### - This method requires the use of an Authorization Key.
-
-*Tags:* `Delivery`
-
-#### Input Parameters
-* `id` - _required_
-* `Authorization` - _required_ - access token
-
-### - This method requires the use of an Authorization Key.
+### Delivery_Delivered
+> - This method requires the use of an Authorization Key.<br/>
 
 *Tags:* `Delivery`
 
 #### Input Parameters
 * `id` - _required_
-* `Authorization` - _required_ - access token
+* `Authorization` - _required_ - access token<br/>
+
+### Delivery_DriverAssigned
+> - This method requires the use of an Authorization Key.<br/>
+
+*Tags:* `Delivery`
+
+#### Input Parameters
+* `id` - _required_
+* `Authorization` - _required_ - access token<br/>
+
+### Delivery_DriverLocation
+> - This method requires the use of an Authorization Key.<br/>
+
+*Tags:* `Delivery`
+
+#### Input Parameters
+* `id` - _required_
+* `Authorization` - _required_ - access token<br/>
+
+### Delivery_OnItsWay
+> - This method requires the use of an Authorization Key.<br/>
+
+*Tags:* `Delivery`
+
+#### Input Parameters
+* `id` - _required_
+* `Authorization` - _required_ - access token<br/>
 
 ## License
 

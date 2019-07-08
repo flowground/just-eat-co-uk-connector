@@ -1,6 +1,6 @@
 {
     "title": "Just Eat UK",
-    "description": "<h2>Delivery Service API</h2><p>Some calls require HTTPS and an Authorization Key which will be provided by Just Eat.<p><p>The key needs to be provided in the header as follows: <b>Authorization: JE-API-KEY {Your-Key-Here}</b></p>",
+    "description": "DELIVERY SERVICE API\nSome calls require HTTPS and an Authorization Key which will be provided by Just\nEat.\n\n\n\nThe key needs to be provided in the header as follows: Authorization: JE-API-KEY\n{Your-Key-Here}",
     "docsUrl": "",
     "url": "https://api.apis.guru/v2/specs/just-eat.co.uk/v1/swagger.json",
     "envVars": {},
@@ -32,7 +32,7 @@
     "actions": {
         "Delivery_DeliverableRestaurants": {
             "main": "./lib/actions/Delivery_DeliverableRestaurants.js",
-            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "title": "Delivery_DeliverableRestaurants",
             "description": "- This method requires the use of an Authorization Key.\r\n",
             "fields": {
                 "verbose": {
@@ -49,7 +49,7 @@
         },
         "Delivery_Estimate": {
             "main": "./lib/actions/Delivery_Estimate.js",
-            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "title": "Delivery_Estimate",
             "description": "- This method requires the use of an Authorization Key.\r\n",
             "fields": {
                 "verbose": {
@@ -114,7 +114,7 @@
         },
         "Delivery_BulkDriverLocations": {
             "main": "./lib/actions/Delivery_BulkDriverLocations.js",
-            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "title": "Delivery_BulkDriverLocations",
             "description": "- This method requires the use of an Authorization Key.\r\n",
             "fields": {
                 "verbose": {
@@ -144,7 +144,7 @@
         },
         "Delivery_AtDeliveryAddress": {
             "main": "./lib/actions/Delivery_AtDeliveryAddress.js",
-            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "title": "Delivery_AtDeliveryAddress",
             "description": "- This method requires the use of an Authorization Key.\r\n",
             "fields": {
                 "verbose": {
@@ -174,7 +174,7 @@
         },
         "Delivery_AtRestaurant": {
             "main": "./lib/actions/Delivery_AtRestaurant.js",
-            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "title": "Delivery_AtRestaurant",
             "description": "- This method requires the use of an Authorization Key.\r\n",
             "fields": {
                 "verbose": {
@@ -204,7 +204,7 @@
         },
         "Delivery_Delivered": {
             "main": "./lib/actions/Delivery_Delivered.js",
-            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "title": "Delivery_Delivered",
             "description": "- This method requires the use of an Authorization Key.\r\n",
             "fields": {
                 "verbose": {
@@ -234,7 +234,7 @@
         },
         "Delivery_DriverAssigned": {
             "main": "./lib/actions/Delivery_DriverAssigned.js",
-            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "title": "Delivery_DriverAssigned",
             "description": "- This method requires the use of an Authorization Key.\r\n",
             "fields": {
                 "verbose": {
@@ -264,7 +264,7 @@
         },
         "Delivery_DriverLocation": {
             "main": "./lib/actions/Delivery_DriverLocation.js",
-            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "title": "Delivery_DriverLocation",
             "description": "- This method requires the use of an Authorization Key.\r\n",
             "fields": {
                 "verbose": {
@@ -294,7 +294,7 @@
         },
         "Delivery_OnItsWay": {
             "main": "./lib/actions/Delivery_OnItsWay.js",
-            "title": "- This method requires the use of an Authorization Key.\r\n",
+            "title": "Delivery_OnItsWay",
             "description": "- This method requires the use of an Authorization Key.\r\n",
             "fields": {
                 "verbose": {

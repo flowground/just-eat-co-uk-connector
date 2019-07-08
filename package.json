@@ -1,7 +1,7 @@
 {
     "name": "just-eat-co-uk-connector",
     "version": "1.0.0",
-    "description": "<h2>Delivery Service API</h2><p>Some calls require HTTPS and an Authorization Key which will be provided by Just Eat.<p><p>The key needs to be provided in the header as follows: <b>Authorization: JE-API-KEY {Your-Key-Here}</b></p>",
+    "description": "DELIVERY SERVICE API\nSome calls require HTTPS and an Authorization Key which will be provided by Just\nEat.\n\n\n\nThe key needs to be provided in the header as follows: Authorization: JE-API-KEY\n{Your-Key-Here}",
     "main": "component.json",
     "dependencies": {
         "elasticio-node": "0.0.9",
